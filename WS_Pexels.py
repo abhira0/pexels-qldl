@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 
 """
-Since, pexels is a client of clouflare, it is not possible for us to make requests using "requests" module from python.
+Since, pexels is a client of cloudflare, it is not possible for us to make requests using "requests" module from python.
 We use selenium in this matter to overcome the difficulties of the situation.
 We use firefox in this code.
 """
@@ -34,7 +34,7 @@ class pexelScraper:
         # Instantiating a firefox profile
         profile = webdriver.FirefoxProfile()
         # Setting this  preference makes sure that without images being loaded on the browser, less data is being used while scraping.
-        # Unnecssary data consumption is reduced
+        # Unnecessary data consumption is reduced
         profile.set_preference("permissions.default.image", 2)
         # Instantiating the webdriver the profile we created earlier
         driver = webdriver.Firefox(firefox_profile=profile)
@@ -73,7 +73,7 @@ class pexelScraper:
         CUR_PATH = os.path.abspath(os.curdir)
         # Making a path for a new folder named "testFiles" in which all the results are saved
         PATH = CUR_PATH + os.path.sep + "textFiles"
-        # Creating a folder using the previous path, only if it doesnt exist
+        # Creating a folder using the previous path, only if it doesn't exist
         if not os.path.exists(PATH):
             os.makedirs(PATH)
         dirFILE = PATH + os.path.sep + QUERY + ".txt"
