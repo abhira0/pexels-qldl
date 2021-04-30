@@ -30,9 +30,6 @@ We could have used [bs4](https://pypi.org/project/beautifulsoup4/ "Beautiful Sou
 * Download these modules: [requests](https://pypi.org/project/requests/), [Beautifulsoup](https://pypi.org/project/bs4/), [urllibs](https://pypi.org/project/urllib3/), [click](https://pypi.org/project/click/), [selenium](https://pypi.org/project/selenium/)<br>
 * Run the given commands on windows command-line. This instruction is particularly for Windows user. If you use any other machine, please see the documentations of the following modules.
 ```Python
-pip install requests
-pip install beautifulsoup4
-pip install urllib3
 pip install click
 pip install selenium
 ```
