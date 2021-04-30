@@ -3,7 +3,7 @@ import sys
 
 import click
 
-from WS_Pexels import *
+from mods.WS_Pexels import *
 
 
 @click.command()
