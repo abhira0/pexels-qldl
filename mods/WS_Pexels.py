@@ -37,7 +37,8 @@ class pexelScraper:
         # Unnecessary data consumption is reduced
         profile.set_preference("permissions.default.image", 2)
         # Instantiating the webdriver the profile we created earlier
-        driver = webdriver.Firefox(firefox_profile=profile)
+        gecko_path = f"./geckodriver/geckodriver.exe"
+        driver = webdriver.Firefox(firefox_profile=profile, executable_path=gecko_path)
         # This will the main url
         URL = "http://www.pexels.com/search/" + QUERY
         # GET request is sent
